@@ -18,8 +18,8 @@ async function fetchAllQuestions() {
   }
 }
 
-// 個人練習題：practice/practice.json 只在本機存在（已加入 .gitignore），
-// 不會寫進 Supabase，也不會跟著部署出去。檔案不存在就當作沒有。
+// 個人練習題：practice/*.json（Claude 產生的模擬題，不是老師的題目），
+// 不會寫進 Supabase。檔案不存在就當作沒有。
 const PRACTICE_FILES = [
   { url: "practice/practice.json", unitId: 9001 },
   { url: "practice/practice2.json", unitId: 9002 },
